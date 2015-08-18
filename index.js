@@ -68,6 +68,7 @@ module.exports = function (spec) {
     output.push('\n\n');
 
     if (results.fail.length > 0) {
+      stream.failed = true;
       output.push(formatErrors(results));
       output.push('\n');
     }
